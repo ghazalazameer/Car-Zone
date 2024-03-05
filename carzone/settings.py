@@ -81,6 +81,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'GhazalaARG@123',
         'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -115,7 +116,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -126,3 +127,7 @@ STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'carzone/static'),
 ]
+
+# Media settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
