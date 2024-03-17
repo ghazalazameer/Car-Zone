@@ -1,4 +1,3 @@
-
 from django.db import models
 from datetime import datetime
 from ckeditor.fields import RichTextField
